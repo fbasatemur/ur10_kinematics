@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- reference to your plugin -->
+    <plugin name="gazebo_tutorials" filename="libhello_world_plugin.so"/>
+
+    <model name="6dof_arm">
+      <pose>0 0 0.85 0 0 0</pose>
+      <include>
+       <uri>model://6dof_arm</uri>
+      </include>
+
+      <!-- Attach the plugin to this model -->
+      <plugin name="6dof_arm_controller" filename="libhello_arm_plugin.so">
+      </plugin>
+    </model>
+
+  </world>
+</sdf>
+
+

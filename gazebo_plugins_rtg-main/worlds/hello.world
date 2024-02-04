@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- reference to your plugin -->
+    <plugin name="gazebo_tutorials" filename="libhello_world_plugin.so"/>
+
+    <model name="diff_drive_robot">
+      <pose>0 0 0.39 0 0 0</pose>
+      <include>
+       <uri>model://DiffDrive</uri>
+      </include>
+
+      <!-- Attach the plugin to this model -->
+      <plugin name="diff_drive_robot_controller" filename="libhello_model_plugin.so">
+      </plugin>
+    </model>
+
+  </world>
+</sdf>
+
+
