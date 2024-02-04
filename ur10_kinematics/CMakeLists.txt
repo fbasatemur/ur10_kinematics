@@ -21,7 +21,3 @@ include_directories(
 add_executable(forward_kinematics src/forward_kinematics.cpp)
 target_link_libraries(forward_kinematics ${catkin_LIBRARIES})
 target_link_libraries(forward_kinematics ${EIGEN3_LIBS})
-
-
-add_executable(linear_motion src/linear_motion.cpp)
-target_link_libraries(linear_motion ${catkin_LIBRARIES})
