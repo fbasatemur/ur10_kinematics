@@ -17,6 +17,7 @@ rosdep install -a
 catkin_make
 source ~/.bashrc
 cp -r src/gazebo_plugins_rtg/models/ur10 ~/.gazebo/models
+source devel/setup.bash
 ```
 
 To start the simulation world (UR10)
@@ -27,6 +28,8 @@ roslaunch gazebo_plugins_rtg ur10.launch
 To install ur10_kinematics:
 ```bash
 cd ur10_kinematics*
+mkdir src 
+mv ur10_kinematics src
 catkin_make
 source devel/setup.bash
 ```
