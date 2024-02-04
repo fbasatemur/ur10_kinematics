@@ -11,7 +11,7 @@ To install the simulation world:
 git clone https://github.com/fbasatemur/ur10_kinematics.git
 mkdir -p gazebo_plugins_rtg/src
 cd ur10_kinematics*
-mv -r gazebo_plugins_rtg-main ../gazebo_plugins_rtg/src
+mv gazebo_plugins_rtg ../gazebo_plugins_rtg/src
 cd ../gazebo_plugins_rtg
 rosdep install -a
 catkin_make
@@ -48,7 +48,7 @@ The appearance of the robot arm for the given joint angles { 0.5, -0.2, 0.6, -0.
 
 <p float="left">
   <img src="https://github.com/fbasatemur/ur10_kinematics/blob/main/doc/quest1_2.png?ref_type=heads" width="390" height="600"/>
-  <img src="https://github.com/fbasatemur/ur10_kinematics/blob/main/doc/quest1_3.png?ref_type=heads" width="450" height="312"/> 
+  <img src="https://github.com/fbasatemur/ur10_kinematics/blob/main/doc/quest1_3.png?ref_type=heads" width="400" height="277"/> 
 </p>
 
 The <3,3> region of the resulting homogeneous matrix is used for orientation, and the <3,1> region is used for position extraction.
